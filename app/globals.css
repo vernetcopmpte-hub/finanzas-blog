@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream text-ink antialiased;
+    font-family: 'DM Sans', system-ui, sans-serif;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@layer components {
+  /* ── AdSense containers ────────────────────────────────────── */
+  .ad-container {
+    @apply w-full overflow-hidden rounded-sm;
+    min-height: 90px;
+    background: #f9f9f7;
+    border: 1px dashed #c8c4b8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ad-container-after-title {
+    @apply ad-container my-6;
+    min-height: 90px;
+  }
+
+  .ad-container-in-article {
+    @apply ad-container my-8;
+    min-height: 250px;
+  }
+
+  .ad-container-sidebar {
+    @apply ad-container;
+    min-height: 300px;
+  }
+
+  /* ── Article prose ─────────────────────────────────────────── */
+  .prose-article {
+    @apply text-ink text-[17px] leading-relaxed;
+    max-width: 68ch;
+  }
+
+  .prose-article p {
+    @apply mb-6;
+  }
+
+  .prose-article h2 {
+    @apply text-2xl md:text-3xl font-semibold text-ink mt-12 mb-4;
+  }
+
+  .prose-article h3 {
+    @apply text-xl font-semibold text-ink mt-8 mb-3;
+  }
+
+  .prose-article strong {
+    @apply font-medium text-ink;
+  }
+
+  .prose-article blockquote {
+    @apply border-l-4 border-brand-500 pl-5 py-1 my-6 text-ink-muted italic;
+  }
+
+  /* ── Category badge ────────────────────────────────────────── */
+  .category-badge {
+    @apply inline-block px-3 py-1 text-xs font-medium tracking-wide uppercase;
+    background: #e8f5ee;
+    color: #15803d;
+    border-radius: 2px;
+    letter-spacing: 0.07em;
+  }
+
+  .ad-container-between-posts {
+    @apply ad-container my-6;
+    min-height: 90px;
+  }
+
+  /* ── Sticky bottom ad (mobile only) ───────────────────────── */
+  .ad-sticky-mobile {
+    @apply fixed bottom-0 left-0 right-0 z-40 w-full overflow-hidden;
+    background: #fafaf7;
+    border-top: 1px solid #c8c4b8;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 0;
+  }
+
+  @media (min-width: 1024px) {
+    .ad-sticky-mobile {
+      display: none;
+    }
+  }
+
+  /* ── Reading progress bar ──────────────────────────────────── */
+  #reading-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #16a34a, #4ade80);
+    transition: width 0.1s linear;
+    z-index: 100;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+}

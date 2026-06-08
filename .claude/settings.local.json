@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p /Users/jowi/Downloads/finanzas-blog/app/categoria/\\\\[slug\\\\])",
+      "Bash(npm install *)",
+      "Bash(find /usr /opt /Users/jowi -name \"node\" -type f 2>/dev/null | head -5)",
+      "Read(//Users/jowi/.nvm/versions/**)",
+      "Read(//Users/jowi/.volta/**)",
+      "Read(//opt/homebrew/bin/**)",
+      "Bash(brew --version)",
+      "Read(//Applications/**)",
+      "Bash(npm --version)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/blog/invertir-100-euros-al-mes)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/categoria/plan-de-inversión-mensual)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/herramientas)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/sitemap.xml)",
+      "Bash(pkill -f \"next dev\")"
+    ]
+  }
+}
