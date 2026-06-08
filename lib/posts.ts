@@ -309,6 +309,272 @@ export const posts: Post[] = [
     ],
   },
   {
+    slug: 'etf-vs-fondo-indexado-diferencias',
+    title: 'ETF vs fondo indexado: ¿cuál es mejor para el inversor español?',
+    excerpt: 'ETFs y fondos indexados invierten en lo mismo pero funcionan de forma diferente. La clave está en la fiscalidad española: los fondos permiten traspasos sin pagar impuestos, los ETFs no. Te explicamos cuándo elegir cada uno.',
+    date: '2025-09-09',
+    author: 'Carlos Méndez',
+    authorRole: 'Asesor de inversiones',
+    category: 'Fondos Indexados',
+    readingTime: 7,
+    coverImage: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80',
+    tags: ['ETF', 'fondo indexado', 'fiscalidad', 'traspaso fondos'],
+    content: [
+      {
+        heading: 'La diferencia fundamental: cómo se compran y venden',
+        paragraphs: [
+          'Un ETF (Exchange-Traded Fund) cotiza en bolsa como una acción: puedes comprarlo y venderlo en cualquier momento durante el horario de mercado al precio que marca en ese instante. Un fondo indexado tradicional, en cambio, solo se puede suscribir o reembolsar al precio de cierre del día, calculado una vez al día por la gestora.',
+          'Para el inversor de largo plazo que invierte mensualmente y no toca su cartera durante años, esta diferencia es irrelevante en la práctica. Nadie necesita vender sus participaciones a las 10:43 de la mañana. Lo que sí importa es la fiscalidad, y ahí los fondos de inversión tienen una ventaja decisiva en España.',
+        ],
+      },
+      {
+        heading: 'La ventaja fiscal de los fondos: el traspaso sin peaje',
+        paragraphs: [
+          'En España existe una norma única en Europa: puedes traspasar dinero de un fondo de inversión a otro sin tributar por las plusvalías acumuladas. Solo pagas impuestos cuando haces el reembolso definitivo. Esto permite rebalancear tu cartera, cambiar de fondo o ajustar tu asignación de activos sin que Hacienda te cobre nada hasta el día en que retires el dinero.',
+          'Los ETFs no tienen esta ventaja. Cada vez que vendes un ETF para comprar otro, Hacienda considera que has realizado una ganancia patrimonial y debes tributar ese año. Si llevas 10 años con plusvalías del 150%, vender un ETF para rebalancear puede costarte entre el 19% y el 28% de esas ganancias en impuestos. En un fondo indexado, ese mismo rebalanceo no tiene coste fiscal.',
+        ],
+      },
+      {
+        heading: '¿Cuándo tiene sentido usar ETFs en España?',
+        paragraphs: [
+          'Los ETFs tienen sentido en España en tres situaciones: cuando inviertes una cantidad puntual grande y no piensas tocarla en 20-30 años (el impacto del rebalanceo es menor), cuando quieres acceder a mercados muy específicos que no tienen fondo de inversión equivalente disponible en España, o cuando usas cuentas de inversión en el extranjero donde la fiscalidad es diferente.',
+          'Para el inversor que empieza con 100 euros al mes y planea ir aumentando gradualmente su inversión durante décadas, los fondos indexados disponibles en MyInvestor o a través de Indexa Capital son casi siempre la mejor opción por la flexibilidad fiscal que ofrecen.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'como-declarar-fondos-indexados-hacienda',
+    title: 'Cómo declarar fondos indexados en la renta: guía práctica para España',
+    excerpt: 'Los fondos indexados y ETFs tienen un tratamiento fiscal específico en España. Te explicamos cómo tributan las ganancias, qué es la regla de los dos meses y cómo aprovechar el diferimiento fiscal para pagar menos impuestos.',
+    date: '2025-09-16',
+    author: 'Ana García',
+    authorRole: 'Analista financiera',
+    category: 'Educación Financiera',
+    readingTime: 8,
+    coverImage: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80',
+    tags: ['fiscalidad', 'IRPF', 'fondos indexados', 'Hacienda', 'declaración renta'],
+    content: [
+      {
+        heading: 'Cómo tributan las ganancias de los fondos de inversión',
+        paragraphs: [
+          'Las ganancias de los fondos de inversión tributan en la base del ahorro del IRPF. Los primeros 6.000 € de ganancia tributan al 19%, entre 6.000 € y 50.000 € al 21%, entre 50.000 € y 200.000 € al 23%, y a partir de 200.000 € al 28%. Estas son las tasas aplicables al reembolso definitivo, es decir, cuando retiras el dinero del fondo.',
+          'Lo fundamental es que mientras no reembolses (no saques el dinero del sistema de fondos), no pagas impuestos. Puedes tener 200.000 € de plusvalías latentes en tu fondo durante 30 años y no pagar ni un euro a Hacienda hasta que decidas retirar el dinero. Este diferimiento fiscal es extraordinariamente valioso porque ese dinero que no pagas en impuestos sigue generando rentabilidad a tu favor.',
+        ],
+      },
+      {
+        heading: 'Los traspasos entre fondos: tu mejor aliado fiscal',
+        paragraphs: [
+          'Como ya hemos mencionado, en España los traspasos entre fondos de inversión están exentos de tributación. Esto significa que puedes rebalancear tu cartera (vender el fondo que más ha subido y comprar el que menos) sin coste fiscal. Esta operación, que en ETFs o acciones generaría una factura para Hacienda, en fondos de inversión es fiscalmente neutra.',
+          'Para aprovechar al máximo esta ventaja, la estrategia óptima es invertir siempre mediante fondos (no ETFs) si tu horizonte es largo plazo y prevés necesitar rebalancear. Solo convierte tu inversión en dinero real cuando lo necesites de verdad, por ejemplo en la jubilación, y hazlo de forma gradual para mantenerte siempre en los tramos bajos de tributación.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'myinvestor-guia-completa',
+    title: 'MyInvestor: guía completa para empezar a invertir en 2025',
+    excerpt: 'MyInvestor es el banco online que da acceso a los fondos de Vanguard, Amundi e iShares en España. Te explicamos cómo abrir cuenta, qué fondos elegir y cómo configurar una aportación automática mensual.',
+    date: '2025-09-23',
+    author: 'Laura Sanz',
+    authorRole: 'Educadora financiera',
+    category: 'Apps Bancarias',
+    readingTime: 9,
+    coverImage: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&q=80',
+    tags: ['MyInvestor', 'fondos Vanguard', 'cómo empezar', 'aportación periódica'],
+    content: [
+      {
+        heading: 'Qué es MyInvestor y por qué destaca',
+        paragraphs: [
+          'MyInvestor es un neobanco respaldado por Andbank, una entidad financiera andorrana con presencia en España. Su propuesta de valor es única en el mercado español: acceso directo a fondos de inversión de Vanguard, Amundi, iShares y otros proveedores internacionales sin comisión de custodia (si tu cartera supera los 10.000 euros) o con una comisión de 0 euros si contratas su roboadvisor.',
+          'La plataforma también ofrece hipotecas competitivas, cuentas remuneradas y carteras automatizadas, pero su joya es el acceso a fondos indexados de primer nivel que hasta hace pocos años solo estaban disponibles para grandes patrimonios o inversores institucionales.',
+        ],
+      },
+      {
+        heading: 'Cómo abrir cuenta en MyInvestor paso a paso',
+        paragraphs: [
+          'El proceso de apertura de cuenta en MyInvestor es 100% digital y tarda entre 10 y 20 minutos. Necesitas: DNI o NIE en vigor, número de teléfono móvil español, cuenta bancaria española para las transferencias y una fotografía tipo selfie para la verificación de identidad. Descarga la app en iOS o Android, pulsa "Abrir cuenta", sigue el proceso guiado y en menos de 24 horas tendrás la cuenta operativa.',
+          'Una vez activa la cuenta, transfiere el dinero que quieras invertir mediante transferencia bancaria ordinaria. El dinero suele estar disponible para invertir en 1-2 días hábiles. A partir de aquí, ve a la sección de fondos y busca el que quieras por nombre o ISIN.',
+        ],
+      },
+      {
+        heading: 'Los mejores fondos indexados disponibles en MyInvestor',
+        paragraphs: [
+          'Los fondos más recomendados para una cartera sencilla son: Vanguard Global Stock Index Fund Investor EUR Acc (ISIN IE00B03HCZ61, TER 0,18%, cubre 1.500 empresas de países desarrollados), Amundi Index MSCI World (ISIN LU1681043599, TER 0,12%, similar cobertura a menor coste) y Vanguard Emerging Markets Stock Index Fund (ISIN IE0031786142, TER 0,23%, para añadir exposición a mercados emergentes).',
+          'Para configurar una aportación automática mensual en MyInvestor, ve al fondo elegido, pulsa "Aportación periódica", elige el importe (mínimo 1 euro), la frecuencia (mensual) y el día del mes. MyInvestor cargará automáticamente el importe desde tu cuenta y comprará participaciones del fondo. Es la forma más sencilla de aplicar la estrategia DCA sin pensar.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'independencia-financiera-cuanto-necesitas',
+    title: '¿Cuánto dinero necesitas para la independencia financiera en España?',
+    excerpt: 'La independencia financiera no es solo para millonarios. Con la regla del 4% y un cálculo sencillo puedes saber exactamente cuánto necesitas ahorrar para vivir de tus inversiones en España. La respuesta te sorprenderá.',
+    date: '2025-09-30',
+    author: 'Ana García',
+    authorRole: 'Analista financiera',
+    category: 'FIRE',
+    readingTime: 8,
+    coverImage: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80',
+    tags: ['independencia financiera', 'FIRE', 'cuánto ahorrar', 'jubilación anticipada'],
+    content: [
+      {
+        heading: 'El cálculo básico: multiplica tus gastos anuales por 25',
+        paragraphs: [
+          'La fórmula de la independencia financiera es brutalmente sencilla: necesitas acumular 25 veces tus gastos anuales. Si vives con 18.000 € al año (1.500 €/mes), necesitas 450.000 €. Si vives con 24.000 € (2.000 €/mes), necesitas 600.000 €. Si vives con 30.000 € (2.500 €/mes), necesitas 750.000 €. Este multiplicador de 25 deriva de la regla del 4%: si retiras el 4% anual de una cartera bien invertida, históricamente el dinero no se agota en horizontes de 30 años.',
+          'En España, los gastos medios de un adulto sin hipoteca ni hijos en una ciudad mediana rondan los 15.000-20.000 € anuales. Eso significa que la independencia financiera para un estilo de vida modesto pero cómodo requiere entre 375.000 € y 500.000 €. Es una cifra alcanzable con disciplina y tiempo, especialmente si se empieza joven.',
+        ],
+      },
+      {
+        heading: '¿En cuántos años puedes alcanzar la independencia financiera?',
+        paragraphs: [
+          'El tiempo necesario depende de tu tasa de ahorro, no de tu salario. Un estudio de Mr. Money Mustache, uno de los blogs de FIRE más influyentes del mundo, demostró que con una tasa de ahorro del 50% (ahorras la mitad de lo que ganas) puedes alcanzar la independencia financiera en menos de 17 años, independientemente de tu salario absoluto.',
+          'Con una tasa de ahorro del 25% (ahorras un cuarto de tu sueldo) el camino se alarga a unos 32 años. Con el 10% de ahorro, que es lo que hace la mayoría, la independencia financiera tarda más de 40 años. La conclusión es clara: lo más poderoso que puedes hacer para acelerar la independencia financiera no es ganar más (aunque ayuda), sino gastar menos y aumentar agresivamente tu tasa de ahorro.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'diversificacion-cartera-inversiones',
+    title: 'Diversificación: por qué no debes poner todos los huevos en la misma cesta',
+    excerpt: 'La diversificación es la única estrategia de inversión gratuita. Repartir tu dinero entre miles de empresas y países reduce el riesgo sin sacrificar rentabilidad. Te explicamos cómo diversificar correctamente con fondos indexados.',
+    date: '2025-10-07',
+    author: 'Carlos Méndez',
+    authorRole: 'Asesor de inversiones',
+    category: 'Estrategia',
+    readingTime: 6,
+    coverImage: 'https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=800&q=80',
+    tags: ['diversificación', 'riesgo', 'cartera', 'MSCI World'],
+    content: [
+      {
+        heading: 'Qué es la diversificación y por qué funciona',
+        paragraphs: [
+          'La diversificación es el principio de distribuir una inversión entre múltiples activos de forma que las pérdidas de unos se compensen con las ganancias de otros. Harry Markowitz, premio Nobel de Economía, demostró matemáticamente en 1952 que una cartera diversificada puede tener la misma rentabilidad esperada que una cartera concentrada pero con significativamente menos riesgo.',
+          'La clave es que activos diferentes no se mueven perfectamente sincronizados. Cuando las acciones europeas caen, las asiáticas pueden subir. Cuando el sector tecnológico sufre, el sector salud puede aguantar mejor. Al combinar activos con baja correlación entre sí, las oscilaciones de la cartera global se suavizan sin sacrificar rentabilidad esperada a largo plazo.',
+        ],
+      },
+      {
+        heading: 'Cómo diversificar con un solo fondo indexado',
+        paragraphs: [
+          'La belleza de los fondos indexados globales es que ofrecen diversificación extrema con un solo producto. El Vanguard Global Stock Index Fund o el Amundi MSCI World invierten en más de 1.500 empresas de 23 países desarrollados con una sola compra. Con ese único fondo tienes exposición a Apple, Microsoft, Nestlé, Toyota, LVMH y más de 1.500 empresas más de todo el mundo.',
+          'Para una diversificación más completa, puedes añadir un fondo de mercados emergentes (China, India, Brasil, etc.) que cubre otros 1.400 empresas en 24 países en desarrollo. Con dos fondos cubres prácticamente toda la economía mundial. Añadir un tercer fondo de renta fija global completa una cartera verdaderamente diversificada que puede capear cualquier tormenta económica.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'pension-plan-indexado-espana',
+    title: 'Planes de pensiones indexados en España: la forma más inteligente de ahorrar para la jubilación',
+    excerpt: 'Los planes de pensiones indexados combinan las ventajas fiscales de los planes de pensiones tradicionales con las comisiones ultrabajas de la inversión pasiva. Una combinación que puede ahorrarte decenas de miles de euros.',
+    date: '2025-10-14',
+    author: 'Laura Sanz',
+    authorRole: 'Educadora financiera',
+    category: 'Estrategia',
+    readingTime: 8,
+    coverImage: 'https://images.unsplash.com/photo-1565514020179-026b92b84bb6?w=800&q=80',
+    tags: ['plan de pensiones', 'jubilación', 'deducción fiscal', 'Indexa Capital'],
+    content: [
+      {
+        heading: 'La ventaja fiscal de los planes de pensiones',
+        paragraphs: [
+          'Las aportaciones a planes de pensiones reducen la base imponible del IRPF, lo que significa que pagas menos impuestos ese año. Si ganas 35.000 € brutos y aportas 1.500 € a un plan de pensiones, Hacienda te devuelve entre el 24% y el 37% de esa cantidad en la declaración de la renta, dependiendo de tu tramo. Es decir, aportar 1.500 € a un plan de pensiones puede costarte realmente entre 945 € y 1.140 €.',
+          'El límite de aportación con deducción es el mínimo entre 1.500 € anuales (límite individual desde 2022) y el 30% de los rendimientos del trabajo. Esta reducción del límite ha hecho que los planes de pensiones sean menos atractivos que antes para las rentas altas, pero siguen siendo muy interesantes para cualquier persona en el tramo del 24% o superior.',
+        ],
+      },
+      {
+        heading: 'Los mejores planes de pensiones indexados en España',
+        paragraphs: [
+          'Indexa Capital ofrece el plan de pensiones indexado con las comisiones más bajas del mercado español, con una comisión total inferior al 0,30% anual frente al 1,5-2% habitual de los planes de pensiones bancarios tradicionales. Su cartera está compuesta por fondos de Vanguard y Dimensional, con una asignación automática según el perfil de riesgo.',
+          'MyInvestor también ofrece planes de pensiones indexados con comisiones muy competitivas. Finizens tiene igualmente una opción de plan de pensiones indexado accesible desde pequeñas aportaciones mensuales. Cualquiera de estas tres opciones es vastamente superior a los planes de pensiones que ofrecen los bancos tradicionales, que cobran comisiones enormes por rentabilidades mediocres.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'cuanto-invertir-al-mes-segun-sueldo',
+    title: '¿Cuánto debería invertir al mes según mi sueldo? La regla del 20%',
+    excerpt: 'No existe una cantidad universal para invertir, pero sí una regla sencilla que funciona para la mayoría: la regla 50/30/20. Te explicamos cómo aplicarla a tu situación y por qué invertir 100 euros al mes es un punto de partida perfecto.',
+    date: '2025-10-21',
+    author: 'Ana García',
+    authorRole: 'Analista financiera',
+    category: 'Plan de Inversión Mensual',
+    readingTime: 6,
+    coverImage: 'https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=800&q=80',
+    tags: ['cuánto invertir', 'regla 50/30/20', 'presupuesto', 'ahorro mensual'],
+    content: [
+      {
+        heading: 'La regla 50/30/20: una guía simple para tus finanzas',
+        paragraphs: [
+          'La regla 50/30/20 propone dividir los ingresos netos en tres categorías: el 50% para necesidades básicas (alquiler o hipoteca, comida, suministros, transporte), el 30% para deseos (ocio, viajes, restaurantes, ropa no esencial) y el 20% para ahorro e inversión. Esta distribución, popularizada por la senadora Elizabeth Warren en su libro "All Your Worth", es una base sólida para la mayoría de las situaciones económicas.',
+          'Con un sueldo neto de 1.500 €/mes, el 20% son 300 € para ahorro e inversión. Con 2.000 € netos, son 400 €. Con 1.200 € netos, son 240 €. Si ahora mismo no puedes destinar el 20%, empieza por el 5% o el 10% y auméntalo gradualmente. Lo importante es el hábito, no la cantidad inicial.',
+        ],
+      },
+      {
+        heading: 'Por qué 100 euros al mes es un punto de partida perfecto',
+        paragraphs: [
+          'Cien euros al mes representa aproximadamente el 5-8% del sueldo mediano en España. Es una cantidad que la mayoría puede encontrar sin grandes sacrificios eliminando gastos hormiga: un par de suscripciones que no usas, reducir las comidas fuera una vez al mes, o simplemente transferir el dinero el mismo día de la nómina antes de que "desaparezca".',
+          'La psicología importa tanto como las matemáticas. Empezar con 100 euros crea el hábito, hace que veas cómo crece tu dinero, y te motiva a aumentar la cantidad con el tiempo. Muchos inversores que empezaron con 50 o 100 euros al mes en sus veintes terminaron invirtiendo 500-1.000 € mensuales en sus treintas sin sentirlo como un esfuerzo.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'vanguard-amundi-ishares-comparativa',
+    title: 'Vanguard vs Amundi vs iShares: ¿qué gestora de fondos indexados es mejor para España?',
+    excerpt: 'Las tres grandes gestoras de fondos indexados ofrecen productos similares pero con diferencias importantes en comisiones, disponibilidad en España y estructura. Te ayudamos a elegir la mejor para tu situación.',
+    date: '2025-10-28',
+    author: 'Carlos Méndez',
+    authorRole: 'Asesor de inversiones',
+    category: 'Fondos Indexados',
+    readingTime: 8,
+    coverImage: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80',
+    tags: ['Vanguard', 'Amundi', 'iShares', 'gestoras fondos', 'TER'],
+    content: [
+      {
+        heading: 'Vanguard: la filosofía del fundador de la inversión pasiva',
+        paragraphs: [
+          'Vanguard es una gestora única en el mundo: es propiedad de sus propios fondos, y por tanto de sus inversores. No tiene accionistas externos que exijan beneficios. Esto se traduce en que cualquier mejora de eficiencia revierte directamente en menores comisiones para los inversores. Fundada por John Bogle en 1975, Vanguard gestiona más de 7 billones de dólares y es la mayor gestora de fondos de inversión del mundo.',
+          'Sus fondos más populares en España son el Vanguard Global Stock Index Fund (ISIN IE00B03HCZ61, TER 0,18%) y el Vanguard U.S. 500 Stock Index Fund (TER 0,10%). Están disponibles en MyInvestor sin comisión de custodia. La filosofía de Vanguard es también cultural: la empresa lleva décadas educando a los inversores sobre los beneficios de la inversión pasiva y los costes del market timing.',
+        ],
+      },
+      {
+        heading: 'Amundi: la gestora europea más grande del mundo',
+        paragraphs: [
+          'Amundi es la mayor gestora de activos de Europa y una de las más grandes del mundo, con más de 2 billones de euros bajo gestión. Sus fondos indexados, especialmente los de la gama "Index" y "Prime", ofrecen comisiones incluso más bajas que los de Vanguard. El Amundi Index MSCI World (ISIN LU1681043599) tiene un TER de solo el 0,12%, inferior al equivalente de Vanguard.',
+          'La ventaja adicional de Amundi en España es que al ser una gestora europea (con sede en París) sus fondos tienen una estructura UCITS compliant que facilita la compra en plataformas españolas. Sus fondos están disponibles en MyInvestor, Renta 4, OpenBank y otras plataformas.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'errores-comunes-adsense-blog',
+    title: 'Cómo sobrevivir a las caídas del mercado sin vender tus fondos indexados',
+    excerpt: 'Las caídas del mercado del 20%, 30% o incluso 50% son normales e inevitables. El problema no es la caída, sino el pánico que lleva a vender en el peor momento. Te damos las herramientas psicológicas para mantener el rumbo.',
+    date: '2025-11-04',
+    author: 'Laura Sanz',
+    authorRole: 'Educadora financiera',
+    category: 'Educación Financiera',
+    readingTime: 7,
+    coverImage: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80',
+    tags: ['caídas mercado', 'psicología inversora', 'crisis', 'mantener inversión'],
+    content: [
+      {
+        heading: 'Las caídas del mercado son normales, frecuentes e inevitables',
+        paragraphs: [
+          'Desde 1926, el mercado de valores americano ha sufrido caídas superiores al 20% en más de 25 ocasiones. Caídas superiores al 30% han ocurrido unas 12 veces. Caídas superiores al 50% han ocurrido 4 veces. En promedio, el mercado cae más de un 10% cada 11 meses, más de un 20% cada 3-4 años, y más de un 30% cada 10 años. Estas caídas son absolutamente normales y no son señal de que el capitalismo se esté derrumbando.',
+          'Lo que sí es extraordinario es la recuperación: el mercado ha recuperado el 100% de las pérdidas en todas y cada una de esas ocasiones. No siempre rápido (la recuperación del crash de 2000 tardó 13 años), pero siempre ha recuperado. El inversor que mantiene sus fondos durante las caídas termina siempre mejor que el que vende asustado y espera para volver a comprar.',
+        ],
+      },
+      {
+        heading: 'La estrategia anti-pánico: automatizar y no mirar',
+        paragraphs: [
+          'La mejor defensa contra el pánico vendedor no es la fortaleza mental — es la automatización. Si configuras una aportación automática mensual y no revisas el valor de tu cartera más de una vez al trimestre, es mucho más difícil tomar decisiones emocionales. Muchos asesores financieros recomiendan directamente no revisar la cartera durante las crisis, igual que no revisas el valor de tu piso cada día.',
+          'Otra herramienta poderosa es recordar que durante las caídas, tus aportaciones mensuales compran más participaciones al mismo precio. Si inviertes 100 euros al mes y el mercado cae un 30%, tus 100 euros de ese mes compran un 43% más de participaciones que antes de la caída. Cuando el mercado se recupere, esas participaciones baratas multiplicarán su valor. Las caídas son rebajas para el inversor paciente.',
+        ],
+      },
+    ],
+  },
+  {
     slug: 'plan-ahorro-100-euros-mes-simulacion',
     title: 'Simulación real: qué pasa si inviertes 100 euros al mes durante 10, 20 y 30 años',
     excerpt: 'Con datos históricos reales del MSCI World y el S&P 500, simulamos qué capital acumularías invirtiendo exactamente 100 euros al mes durante distintos plazos. Los resultados sorprenden incluso a los más escépticos.',
