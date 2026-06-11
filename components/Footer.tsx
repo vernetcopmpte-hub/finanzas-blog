@@ -12,11 +12,15 @@ const footerLinks = {
     { label: 'Glosario', href: '/glosario' },
     { label: 'Newsletter', href: '/newsletter' },
   ],
+  Nosotros: [
+    { label: 'Quiénes somos', href: '/quienes-somos' },
+    { label: 'Contacto', href: '/contacto' },
+    { label: 'Política de afiliados', href: '/afiliados' },
+  ],
   Legal: [
     { label: 'Política de privacidad', href: '/privacidad' },
     { label: 'Aviso legal', href: '/aviso-legal' },
     { label: 'Política de cookies', href: '/cookies' },
-    { label: 'Política de afiliados', href: '/afiliados' },
   ],
 }
 
@@ -25,9 +29,9 @@ export default function Footer() {
   return (
     <footer className="bg-ink text-cream/80 mt-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 mb-10">
           {/* Brand */}
-          <div className="sm:col-span-2 md:col-span-1">
+          <div className="sm:col-span-2 md:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <span className="w-8 h-8 rounded-full bg-brand-600 flex items-center justify-center text-white text-sm font-bold">F</span>
               <span className="text-lg font-semibold text-cream" style={{ fontFamily: "'Playfair Display', Georgia, serif" }}>
