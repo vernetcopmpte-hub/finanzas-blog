@@ -4,8 +4,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { getAllSlugs, getPostBySlug, getAllPosts, formatDate, categoryToSlug } from '@/lib/posts'
 import PostCard from '@/components/PostCard'
-import { AdAfterTitle, AdInArticle } from '@/components/AdBanner'
+import { AdAfterTitle, AdInArticle, AdSidebar } from '@/components/AdBanner'
 import ReadingProgress from '@/components/ReadingProgress'
+import AffiliateBox from '@/components/AffiliateBox'
+import FAQSection, { FAQSchema } from '@/components/FAQSection'
 
 // ── Static params for all posts ──────────────────────────────────────────
 export async function generateStaticParams() {
@@ -96,11 +98,13 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
 
   return (
     <>
-      {/* JSON-LD */}
+      {/* JSON-LD Article */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {/* JSON-LD FAQ */}
+      {(post as any).faq && <FAQSchema faqs={(post as any).faq} />}
 
       {/* Reading progress bar */}
       <ReadingProgress />
@@ -168,25 +172,32 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
               />
             </div>
 
-            {/* ── Article content with in-article ad ─────────── */}
+            {/* ── Article content with in-article ads ────────── */}
             <div className="prose-article">
               {post.content.map((section, sectionIdx) => (
                 <div key={sectionIdx}>
-                  {section.heading && (
-                    <h2>{section.heading}</h2>
-                  )}
+                  {section.heading && <h2>{section.heading}</h2>}
                   {section.paragraphs.map((para, paraIdx) => (
                     <div key={paraIdx}>
                       <p>{para}</p>
-                      {/* ── AdSense in-article: después del 2º párrafo de la 1ª sección ── */}
-                      {sectionIdx === 0 && paraIdx === 1 && (
-                        <AdInArticle />
+                      {/* Ad after 2nd paragraph of section 0 */}
+                      {sectionIdx === 0 && paraIdx === 1 && <AdInArticle />}
+                      {/* Affiliate box after section 1 */}
+                      {sectionIdx === 1 && paraIdx === section.paragraphs.length - 1 && (
+                        <AffiliateBox />
                       )}
+                      {/* Second in-article ad midway */}
+                      {sectionIdx === 2 && paraIdx === 1 && <AdInArticle />}
                     </div>
                   ))}
                 </div>
               ))}
             </div>
+
+            {/* ── FAQ Section ─────────────────────────────────── */}
+            {(post as any).faq && (post as any).faq.length > 0 && (
+              <FAQSection faqs={(post as any).faq} />
+            )}
 
             {/* Tags */}
             <div className="mt-10 pt-6 border-t border-stone-200 flex flex-wrap gap-2 items-center">
@@ -253,10 +264,20 @@ export default function BlogPost({ params }: { params: { slug: string } }) {
               )}
 
               {/* Sidebar ad */}
-              <div className="p-1 bg-white border border-stone-200 rounded-lg overflow-hidden">
-                <div className="ad-container-sidebar" aria-label="Publicidad" role="complementary">
-                  <span className="text-xs text-stone-400 select-none">Publicidad · sidebar</span>
-                </div>
+              <AdSidebar />
+
+              {/* Sidebar affiliate mini */}
+              <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-lg text-sm">
+                <p className="font-semibold text-ink mb-1">💡 ¿Listo para invertir?</p>
+                <p className="text-xs text-ink-muted mb-3">MyInvestor: fondos Vanguard sin comisión de custodia.</p>
+                <a
+                  href="https://myinvestor.es"
+                  target="_blank"
+                  rel="noopener noreferrer sponsored"
+                  className="block text-center py-2 bg-brand-700 text-white text-xs rounded font-medium hover:bg-brand-800 transition-colors"
+                >
+                  Abrir cuenta gratis →
+                </a>
               </div>
             </div>
           </aside>

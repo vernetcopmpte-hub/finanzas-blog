@@ -1,6 +1,11 @@
 // lib/posts.ts
 // Central data source. Replace with a CMS (Contentful, Sanity, etc.) in production.
 
+export interface FAQItem {
+  question: string
+  answer: string
+}
+
 export interface Post {
   slug: string
   title: string
@@ -13,6 +18,7 @@ export interface Post {
   coverImage: string
   tags: string[]
   content: Section[]
+  faq?: FAQItem[]
 }
 
 export interface Section {

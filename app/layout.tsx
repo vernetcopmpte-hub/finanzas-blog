@@ -3,6 +3,7 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { AdStickyMobile } from '@/components/AdBanner'
+import ExitPopup from '@/components/ExitPopup'
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://finanzassimples.es'
 const SITE_NAME = 'Finanzas Simples'
@@ -82,7 +83,18 @@ export default function RootLayout({
   return (
     <html lang="es" className="scroll-smooth">
       <head>
-        {/* Google AdSense — sustituye ca-pub-XXXXXXXXXX con tu ID real */}
+        {/* Google Analytics 4 */}
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`} />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${process.env.NEXT_PUBLIC_GA_ID}',{page_path:window.location.pathname});`,
+              }}
+            />
+          </>
+        )}
+        {/* Google AdSense */}
         {process.env.NEXT_PUBLIC_ADSENSE_ID && (
           <script
             async
@@ -96,6 +108,7 @@ export default function RootLayout({
         <main className="min-h-screen">{children}</main>
         <Footer />
         <AdStickyMobile />
+        <ExitPopup />
       </body>
     </html>
   )
